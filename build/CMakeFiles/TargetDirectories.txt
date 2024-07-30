@@ -1,0 +1,3 @@
+C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/CMakeFiles/tcpServer.dir
+C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/CMakeFiles/ZERO_CHECK.dir

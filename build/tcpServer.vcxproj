@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{691E54CB-3670-37C1-8375-73E930D07120}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>tcpServer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tcpServer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tcpServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tcpServer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tcpServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tcpServer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tcpServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tcpServer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tcpServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work_study/boost_1_85_0"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work_study\boost_1_85_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work_study\boost_1_85_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\work_study\boost_1_85_0\stage\lib\libboost_system-vc143-mt-gd-x64-1_85.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/work_study/boost_1_85_0/stage/lib;D:/work_study/boost_1_85_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/Debug/tcpServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/Debug/tcpServer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work_study/boost_1_85_0"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work_study\boost_1_85_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work_study\boost_1_85_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\work_study\boost_1_85_0\stage\lib\libboost_system-vc143-mt-x64-1_85.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/work_study/boost_1_85_0/stage/lib;D:/work_study/boost_1_85_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/Release/tcpServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/Release/tcpServer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work_study/boost_1_85_0"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work_study\boost_1_85_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work_study\boost_1_85_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\work_study\boost_1_85_0\stage\lib\libboost_system-vc143-mt-x64-1_85.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/work_study/boost_1_85_0/stage/lib;D:/work_study/boost_1_85_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/MinSizeRel/tcpServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/MinSizeRel/tcpServer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work_study/boost_1_85_0"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work_study\boost_1_85_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work_study\boost_1_85_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\work_study\boost_1_85_0\stage\lib\libboost_system-vc143-mt-x64-1_85.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/work_study/boost_1_85_0/stage/lib;D:/work_study/boost_1_85_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/RelWithDebInfo/tcpServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/RelWithDebInfo/tcpServer.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\work_study\CMake\bin\cmake.exe "-SC:/Users/Chen Lei/Desktop/work/c++/cpp_thread" "-BC:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build" --check-stamp-file "C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCCompilerABI.c;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystem.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;D:\work_study\CMake\share\cmake-3.30\Modules\FindBoost.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\work_study\CMake\bin\cmake.exe "-SC:/Users/Chen Lei/Desktop/work/c++/cpp_thread" "-BC:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build" --check-stamp-file "C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCCompilerABI.c;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystem.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;D:\work_study\CMake\share\cmake-3.30\Modules\FindBoost.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\work_study\CMake\bin\cmake.exe "-SC:/Users/Chen Lei/Desktop/work/c++/cpp_thread" "-BC:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build" --check-stamp-file "C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCCompilerABI.c;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystem.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;D:\work_study\CMake\share\cmake-3.30\Modules\FindBoost.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\work_study\CMake\bin\cmake.exe "-SC:/Users/Chen Lei/Desktop/work/c++/cpp_thread" "-BC:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build" --check-stamp-file "C:/Users/Chen Lei/Desktop/work/c++/cpp_thread/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\3.30.1\CMakeSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCCompilerABI.c;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXCompilerABI.cpp;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeCompilerIdDetection.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCXXCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerABI.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerId.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineCompilerSupport.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineRCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeDetermineSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeFindBinUtils.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeParseLibraryArchitecture.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeRCCompiler.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystem.cmake.in;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCXXCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestCompilerCommon.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CMakeTestRCCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TI-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\CompilerId\VS-10.vcxproj.in;D:\work_study\CMake\share\cmake-3.30\Modules\FindBoost.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Internal\FeatureTesting.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-Determine-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;D:\work_study\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\tcpServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Chen Lei\Desktop\work\c++\cpp_thread\build\ZERO_CHECK.vcxproj">
+      <Project>{DCF43201-6376-373B-BA80-B79AE2072A58}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
