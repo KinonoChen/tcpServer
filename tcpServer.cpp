@@ -5,7 +5,7 @@
 #include <string>
 #include <thread>
 #include <chrono>
-
+#include <threadpool.h>
 //using namespace boost::asio;
 void handle_connection(boost::asio::ip::tcp::socket socket) {
     try {
@@ -72,11 +72,14 @@ int main() {
         // 创建 IO 服务
         boost::asio::io_context io_context;
         boost::asio::ip::tcp::acceptor acceptor(io_context, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), 7867));
-
+        ThreadPool pool(4);
         for (;;) {
             boost::asio::ip::tcp::socket socket(io_context);
             acceptor.accept(socket);
+            //handle_connection(std::move(socket));
+            pool.execute([socket = std::move(socket)]() mutable {
             handle_connection(std::move(socket));
+            });
         }
     } catch (std::exception& e) {
         std::cerr << "Exception: " << e.what() << std::endl;

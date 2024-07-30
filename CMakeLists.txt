@@ -10,7 +10,7 @@ find_package(Boost REQUIRED COMPONENTS system)
 
 # 包含 Boost 头文件目录
 include_directories(${Boost_INCLUDE_DIRS})
-
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 # 链接 Boost 库目录
 link_directories(${BOOST_LIBRARYDIR})
 
